@@ -6,7 +6,9 @@
 
 ## User settings
 xcuserdata/
-*.xcodeproj/*.xcworkspace/xcuserdata # I added this
+
+# I added this.
+Swift Dictionary/Swift Dictionary.xcodeproj/project.xcworkspace/xcuserdata/dan-menard.xcuserdatad/UserInterfaceState.xcuserstate
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
