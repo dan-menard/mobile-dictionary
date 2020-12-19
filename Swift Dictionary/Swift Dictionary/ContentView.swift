@@ -7,15 +7,35 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SearchView: View {
+    @State private var word: String = "";
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                TextField("Enter a word", text: $word)
+                NavigationLink(destination: DefinitionView(word: word)) {
+                    Text("Search")
+                }.buttonStyle(PlainButtonStyle())
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DefinitionView: View {
+    let word: String;
+    
+    var body: some View {
+        VStack {
+            Text("Definition page for \(word)")
+        }
+    }
+}
+
+struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            SearchView()
+        }
     }
 }

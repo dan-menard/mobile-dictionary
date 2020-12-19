@@ -11,7 +11,7 @@ import SwiftUI
 struct Swift_DictionaryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchView()
         }
     }
 }
