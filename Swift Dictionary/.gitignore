@@ -1,14 +1,19 @@
 # Borrowed this verbatim from https://github.com/github/gitignore/blob/master/Swift.gitignore <3
+#
+# Stuff I added:
+.DS_Store
+*.xcuserstate
+
+
+# The rest is theirs:
 
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+
 ## User settings
 xcuserdata/
-
-# I added this.
-Swift Dictionary/Swift Dictionary.xcodeproj/project.xcworkspace/xcuserdata/dan-menard.xcuserdatad/UserInterfaceState.xcuserstate
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
