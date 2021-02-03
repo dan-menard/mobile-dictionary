@@ -27,10 +27,12 @@ struct DefinitionView: View {
     let word: String
     let data: Data
     
+    @State private var decodedData: [Definition] = []
+    
     var body: some View {
         VStack {
             Text("Definition page for \(word)")
-            Text("Also \(data.description)")
+            
         }.onAppear {
             self.decodeData()
         }
@@ -38,12 +40,19 @@ struct DefinitionView: View {
     
     func decodeData() {
         do {
-            let decodedResponse = try JSONDecoder().decode([Definition].self, from: data)
-            
-            print(decodedResponse)
+            decodedData = try JSONDecoder().decode([Definition].self, from: data)
+            print(decodedData)
         }
         catch {
             print(error)
+        }
+    }
+}
+
+struct DefinitionView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            DefinitionView(word: "coffee", data: Data.init())
         }
     }
 }
