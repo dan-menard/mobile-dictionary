@@ -14,6 +14,8 @@
 		42657577258E5A2500BBA211 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42657576258E5A2500BBA211 /* Preview Assets.xcassets */; };
 		42657582258E5A2500BBA211 /* Swift_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42657581258E5A2500BBA211 /* Swift_DictionaryTests.swift */; };
 		4265758D258E5A2500BBA211 /* Swift_DictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4265758C258E5A2500BBA211 /* Swift_DictionaryUITests.swift */; };
+		42CF288025CAFD230036C636 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CF287F25CAFD230036C636 /* HeaderView.swift */; };
+		42CF288825CB04110036C636 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CF288725CB04110036C636 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		42657588258E5A2500BBA211 /* Swift DictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift DictionaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4265758C258E5A2500BBA211 /* Swift_DictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_DictionaryUITests.swift; sourceTree = "<group>"; };
 		4265758E258E5A2500BBA211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42CF287F25CAFD230036C636 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		42CF288725CB04110036C636 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				42657575258E5A2500BBA211 /* Preview Content */,
 				424EC71A25C880B1003CD6A0 /* SearchView.swift */,
 				424EC71F25C880FB003CD6A0 /* DefinitionView.swift */,
+				42CF287E25CAFCF40036C636 /* Definintion Subviews */,
 			);
 			path = "Swift Dictionary";
 			sourceTree = "<group>";
@@ -131,6 +136,15 @@
 				4265758E258E5A2500BBA211 /* Info.plist */,
 			);
 			path = "Swift DictionaryUITests";
+			sourceTree = "<group>";
+		};
+		42CF287E25CAFCF40036C636 /* Definintion Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				42CF287F25CAFD230036C636 /* HeaderView.swift */,
+				42CF288725CB04110036C636 /* CardView.swift */,
+			);
+			path = "Definintion Subviews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CF288025CAFD230036C636 /* HeaderView.swift in Sources */,
 				424EC71B25C880B1003CD6A0 /* SearchView.swift in Sources */,
 				42657570258E5A2400BBA211 /* Swift_DictionaryApp.swift in Sources */,
 				424EC72025C880FB003CD6A0 /* DefinitionView.swift in Sources */,
+				42CF288825CB04110036C636 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
